@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PracticeProject1';
+  messageFromChild = '';
+
+
+
+
+
+
+  msgFromChild(evt: any) {
+    this.messageFromChild = evt.value;
+    console.log(this.messageFromChild)
+  }
 }
